@@ -15,6 +15,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     bool check_name();
+    void adduser(QString);
     ~MainWindow();
 
 private slots:
@@ -26,8 +27,11 @@ private slots:
 
     void read();
 
+
 private:
     Ui::MainWindow *ui;
+    QVector<QString> names;
+    int am;
 };
 
 #endif // MAINWINDOW_H
