@@ -5,7 +5,9 @@
 #-------------------------------------------------
 
 QT       += core gui
-QT += network
+QT       += network
+
+QMAKE_CXXFLAGS_DEBUG +=-Wall -pedantic
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
